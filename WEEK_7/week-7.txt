@@ -1,0 +1,162 @@
+mygrade = float(input("Enter your grade:"))
+
+if mygrade >= 97:
+    print ("Grade is 1.00")
+elif mygrade >= 94:
+    print ("Grade is 1.25")
+elif mygrade >= 91:
+    print("Grade is 1.5")
+elif mygrade >= 88:
+    print("Grade is 1.75")
+elif mygrade >= 85:
+    print("Grade is 2.00")
+elif mygrade >= 82:
+    print("Grade is 2.25")
+elif mygrade >= 79:
+    print("Grade is 2.50")
+elif mygrade >= 76:
+    print("Grade is 2.75")
+elif mygrade >= 75:
+    print("Grade is 3.00")
+else:
+    print ('failed')
+
+
+
+
+
+shapeofyou = input("Enter your shape:")
+if shapeofyou == "square":
+    print ("square")
+elif shapeofyou == "rectangle":
+    print ("rectange")
+elif shapeofyou == "circle":
+    print ("circle")
+elif shapeofyou == "square":
+    print ("squaree")
+else:
+    print("Unknown shape")
+
+print ("Hayss")
+
+
+citizenship = "Chinese"
+Age = 25
+registered = True
+
+if citizenship == "Chinese" and Age >= 18:
+    if registered:
+        print ("You can vote")
+    else:
+        print ("You cannot vote and you are not registered")
+
+
+elif citizenship == "Chinese" and Age < 18:
+    if registered:
+        print ("You cannot vote, Please wait until you are eligible")
+
+else:
+    print ("You cannot vote nor register")
+
+
+
+
+'"'
+print ('before loop')
+for x in range (10):
+    print("x value is : " + str(x))
+
+print ('after loop'
+       )
+'"'
+print ('before loop')
+for x in range (0 ,10):
+    print ("x value is : " + str(x))
+
+print('after loop')
+
+
+print ('before loop')
+for x in range (0 ,10, 1):
+    print ("x value is : " + str(x))
+
+print('after loop')
+
+
+
+
+
+#iteration = for each
+f1teamslist = ["Ferrari", "Mercedes", "Red Bull", "Williams"]
+for team in f1teamslist:
+    print("f1 team list include: " + team)
+
+print ("before loop")
+
+myString = "hfhahwhahfhawhashahwhfhah"
+for char in myString:
+    print (char.upper())
+
+print("after loop")
+
+
+
+
+originalValue = "Mercedes"
+
+print ("originalValue = " + originalValue)
+newValue = ""
+
+for x in  originalValue:
+    newValue = x + newValue
+
+print ("newValue = " + newValue)
+
+print (originalValue[::-1])
+
+
+'"'
+print ('before loop')
+
+for i in range(10):
+
+    if i % 2 == 0:
+        print ("Even number = " + str(i))
+        continue
+    if i > 6:
+        print ("I is greater than 7")
+        break
+
+
+print ("i value is : " + str(i))
+print ('after loop')
+
+
+'"'
+\
+
+
+
+
+
+
+
+
+
+import time
+
+isConnected = "no"
+
+
+
+
+for retry in range(4):
+    time.sleep(2)
+    isConnected = input ('isConnected?:')
+    if  isConnected == "yes":
+        print("now connected")
+        break
+    else:
+        print("request timed out")
+
+print("processing your requenst...")
