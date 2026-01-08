@@ -1,0 +1,62 @@
+#string
+print("hello world")
+print('hello world')
+print('Ferrer said:"Hello world"')
+print("Ferrer Said \"Hello World Single Quote!!!\"")
+print('hello earth')
+print('hello mars')
+input("enter your name :")
+input("enter your age :")
+
+#string
+import serial
+
+
+
+#COMMENT
+'''
+HELLO PAREEEE
+AYOKO NA STOP THIS NAPO!!!
+AEBBBVOJBCVBABOBVOB;BBZBVS
+KHVKHVUVI
+VHKIYIVO;IFIYV
+123456654321234567876543FMFFNNB
+'''
+
+
+#string
+#number(integer, float, long, double)
+
+myGreetings = "kamusta ka love"
+myAge = 4689.36
+
+print(myGreetings)
+print(myAge)
+
+#string
+#number(integer, float, long, double)
+
+myGreetings = "kamusta ka love"
+myAge = 4689.360987654345678
+
+
+print(myGreetings)
+print(myAge)
+
+combineGreetAndAge1 = "kamusta ka love" + str(4689.36)
+combineGreetAndAge2 = "kamusta ka love" + str(myAge)
+
+print(combineGreetAndAge1)
+print(combineGreetAndAge2
+
+#string
+#number(integer, float, long, double)
+
+a = input("enter first number : 25 ")
+b = input("enter second number : 15 ")
+
+sumString = a + b
+sumInt = int(a) + int(b)
+
+print(sumString)
+print(sumInt)
