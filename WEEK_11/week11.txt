@@ -1,0 +1,95 @@
+import os
+import csv
+import time
+
+# -------------------------------
+# Paths and CSV setup
+# -------------------------------
+
+# FIXED: __file__ instead of _file_
+BASE_PATH = os.path.dirname(os.path.dirname(__file__))
+CSV_FOLDER = os.path.join(BASE_PATH, "RESOURCES")
+CSV_PATH = os.path.join(CSV_FOLDER, "MYFIRSTCSV.csv")
+
+print("CSV Path:", CSV_PATH)
+
+csv_data = []
+
+# -------------------------------
+# Reading CSV
+# -------------------------------
+try:
+    with open(CSV_PATH, mode='r', newline='', encoding='utf-8') as csv_file:
+        reader = csv.reader(csv_file)
+        for row in reader:
+            print(row)  # print each row
+            csv_data.append(row)  # add row to list
+
+except FileNotFoundError:
+    print(f"File not found: {CSV_PATH}")
+
+# -------------------------------
+# Check CSV data
+# -------------------------------
+print("\nFull CSV Data:")
+print(csv_data)
+
+if len(csv_data) > 2:
+    print("\nThird row:")
+    print(csv_data[2])
+
+# -------------------------------
+# Extract NAME (column 1) and ADDRESS (column 5)
+# -------------------------------
+csv_new_data = []
+for row in csv_data:
+    if len(row) >= 6:  # make sure there are enough columns
+        csv_new_data.append([row[1], row[5]])
+
+print("\nNew CSV Data (Name & Address):")
+print(csv_new_data)
+
+# -------------------------------
+# Demonstrate current directory info
+# -------------------------------
+print("\nCurrent Working Directory:", os.getcwd())
+print("Files & folders in cwd:", os.listdir(os.getcwd()))
+print("Absolute path of this file:", os.path.abspath(__file__))
+print("Base path:", BASE_PATH)
+
+# -------------------------------
+# Create a new file
+# -------------------------------
+new_file_path = os.path.join(BASE_PATH, "paldo.txt")
+with open(new_file_path, 'w', newline='') as palduhan_na:
+    palduhan_na.write("File created successfully!\n")
+print(f"File created at {new_file_path}")
+time.sleep(1)
+
+# -------------------------------
+# Walk through directories to remove a specific file
+# -------------------------------
+pathdir = ""
+for root, dirs, files in os.walk(BASE_PATH):
+    for filename in files:
+        print("Checking file:", filename)
+        if filename == "bulitas.txt":
+            pathdir = os.path.join(root, filename)
+            os.remove(pathdir)
+            print(f"Removed file: {pathdir}")
+            break
+
+# -------------------------------
+# Extra printouts (repeat style from original)
+# -------------------------------
+print("\nFinal CSV data check:")
+print(csv_data)
+
+if len(csv_data) > 2:
+    print("\nThird row again (repeat check):")
+    print(csv_data[2])
+
+print("\nNew CSV data again (repeat):")
+print(csv_new_data)
+
+print("\nEnd of script.")
