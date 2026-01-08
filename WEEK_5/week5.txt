@@ -1,0 +1,174 @@
+strFullName = "Jhon Lhynher Ferrer"
+
+intLenght = len(strFullName)
+
+print(intLenght)
+print(strFullName[0])
+print(strFullName[6])
+print(strFullName[9])
+print(strFullName[intLenght - 1])
+
+strInputFromUser = "Justine Nabunturan"
+
+strFullName = strInputFromUser
+
+print(strFullName)
+intLenght = len(strFullName)
+print(intLenght)
+
+print(strFullName[6])
+print(strFullName[9])
+
+
+
+strFullName = "Jhon Lhynher Ferrer"
+
+strNewValue = strFullName.upper()
+print(strNewValue)
+
+strNewValue = strFullName.count("h")
+print(strNewValue)
+
+strNewValue = strFullName.split(" ")
+print(strNewValue)
+
+strNewValue = strFullName.split("h")
+print(strNewValue)
+strNewValue = strFullName.split("jhon")
+print(strNewValue)
+strNewValue = strFullName.split("ferr")
+print(strNewValue)
+
+
+strFullName = "Jhon Lhynher Ferrer"
+strNewValue = strFullName.replace("Jhon Lhynher", "Stephen Curry")
+print(strNewValue)
+print(strNewValue[9])
+print(strNewValue)
+intLenght = len(strNewValue)
+print(intLenght)
+
+strFirstName = "Gwapo"
+strSecondName = "Si"
+strLastName = "Ferrer"
+
+strFullName = "_".join([strFirstName, strSecondName, strLastName])
+
+print(strFullName)
+
+strFirstName = "Jhon"
+strSecondName = "Lhynher"
+strLastName = "Ferrer"
+strFullName = "_".join([strFirstName, strSecondName, strLastName])
+print(strFullName)
+
+newValue = strFullName.isnumeric()
+print(strNewValue)
+
+#Jhon_Lhynher_Ferrer substring
+newValue = strFullName[2:10]
+print(newValue)
+newValue = strFullName[2:10:2]
+print(newValue)
+#return the lowest index avaialable
+print(strFullName.index("h", 2,10))
+print(strFullName.index("h"))
+
+
+
+strInput = "123JhonLhynher123 Ferrer2345678909876543234567898765432345678"
+
+newString = ""
+for char in strInput:
+    if not char.isnumeric():
+        newString = newString + char
+
+print(newString)
+
+#Numerical integer (-3,0,562) float (23.23252) complex number (45 + 25i)
+#i = amphere, j = imaginary resistance 25 + j25 = inpedance
+
+myIntegerA = 25
+myIntegerB = 15
+myFloatA = 25.45
+myFloatB = 14.55
+myComplexA = 25 - 3j
+myComplexB = 10 - 12j
+
+#+, -, /, *
+sum = myIntegerA + myIntegerB
+print(sum)
+difference = myIntegerA - myIntegerB
+print(difference)
+product = myIntegerA * myIntegerB
+print(product)
+qoutient = myIntegerA / myIntegerB
+print(qoutient)
+Roundedqoutient = round(qoutient, 2)
+print(Roundedqoutient)
+
+remainder =myIntegerA % myIntegerB
+print(remainder)
+
+#PEMDAS
+myComprod = myComplexA * myComplexB
+print(myComprod)
+
+
+import math
+
+kurtAngle = math.sin(90)
+print(kurtAngle)
+
+kurtAngle = math.degrees(math.cos(90))
+print(kurtAngle)
+
+print(math.factorial(100))
+
+cos_90_deg = math.cos(math.radians(45))
+print(cos_90_deg)
+
+#boolean
+
+isPresent = False
+isExist = True
+isAvailable = True
+
+isValid = 1
+isOkay = 0
+
+isNumeric = False
+myChar = "5"
+
+isNumeric = myChar.isnumeric()
+strNumeric = str(myChar.isnumeric())
+print([strNumeric])
+print([isNumeric])
+
+
+#Comparison Operator
+a = 10
+b = 16
+isEqual = (a == b)
+print(isEqual)
+isEqual = (a <= b)
+print(isEqual)
+isEqual = (a >= b)
+print(isEqual)
+
+result = 10 **12
+print(result)
+
+#membership operator
+
+isIn = (9 in [23, 14, 34, 9, 28, 56])
+print(isIn)
+isIn = (9 in [23, 14, 34, 91, 28, 56])
+print(isIn)
+
+isIs = ("forever" == "us")
+print(isIs)
+isIs = ("us" == "forever")
+print(isIs)
+isIs = ("No us" == "No us")
+print(isIs)
