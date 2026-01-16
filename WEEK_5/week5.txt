@@ -1,4 +1,4 @@
-strFullName = "Jhon Lhynher Ferrer"
+strFullName = "Rj Argallon"
 
 intLenght = len(strFullName)
 
@@ -8,7 +8,7 @@ print(strFullName[6])
 print(strFullName[9])
 print(strFullName[intLenght - 1])
 
-strInputFromUser = "Justine Nabunturan"
+strInputFromUser = "Red Horse"
 
 strFullName = strInputFromUser
 
@@ -21,7 +21,7 @@ print(strFullName[9])
 
 
 
-strFullName = "Jhon Lhynher Ferrer"
+strFullName = "Rj Argallon"
 
 strNewValue = strFullName.upper()
 print(strNewValue)
@@ -40,25 +40,25 @@ strNewValue = strFullName.split("ferr")
 print(strNewValue)
 
 
-strFullName = "Jhon Lhynher Ferrer"
-strNewValue = strFullName.replace("Jhon Lhynher", "Stephen Curry")
+strFullName = "Rj Argallon"
+strNewValue = strFullName.replace("Rj", "Padilla")
 print(strNewValue)
 print(strNewValue[9])
 print(strNewValue)
 intLenght = len(strNewValue)
 print(intLenght)
 
-strFirstName = "Gwapo"
-strSecondName = "Si"
-strLastName = "Ferrer"
+strFirstName = "Pogi"
+strSecondName = "Ni"
+strLastName = "Rj"
 
 strFullName = "_".join([strFirstName, strSecondName, strLastName])
 
 print(strFullName)
 
-strFirstName = "Jhon"
-strSecondName = "Lhynher"
-strLastName = "Ferrer"
+strFirstName = "Rj"
+strSecondName = "Medina"
+strLastName = "Argallon"
 strFullName = "_".join([strFirstName, strSecondName, strLastName])
 print(strFullName)
 
@@ -76,7 +76,7 @@ print(strFullName.index("h"))
 
 
 
-strInput = "123JhonLhynher123 Ferrer2345678909876543234567898765432345678"
+strInput = "123RjPogi123 Argallon23456784957264896234567898765432345678"
 
 newString = ""
 for char in strInput:
