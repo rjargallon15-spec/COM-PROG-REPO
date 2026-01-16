@@ -13,22 +13,12 @@ import serial
 
 
 
-#COMMENT
-'''
-HELLO PAREEEE
-AYOKO NA STOP THIS NAPO!!!
-AEBBBVOJBCVBABOBVOB;BBZBVS
-KHVKHVUVI
-VHKIYIVO;IFIYV
-123456654321234567876543FMFFNNB
-'''
-
 
 #string
 #number(integer, float, long, double)
 
-myGreetings = "kamusta ka love"
-myAge = 4689.36
+myGreetings = "kamusta ka kaibigan"
+myAge = 69
 
 print(myGreetings)
 print(myAge)
@@ -36,15 +26,15 @@ print(myAge)
 #string
 #number(integer, float, long, double)
 
-myGreetings = "kamusta ka love"
-myAge = 4689.360987654345678
+myGreetings = "kamusta ka kaibigan"
+myAge = 69
 
 
 print(myGreetings)
 print(myAge)
 
-combineGreetAndAge1 = "kamusta ka love" + str(4689.36)
-combineGreetAndAge2 = "kamusta ka love" + str(myAge)
+combineGreetAndAge1 = "kamusta ka kaibigan" + str(69)
+combineGreetAndAge2 = "kamusta ka kaibigan" + str(myAge)
 
 print(combineGreetAndAge1)
 print(combineGreetAndAge2
