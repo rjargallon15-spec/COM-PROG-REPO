@@ -114,7 +114,7 @@ mytuple = (
 print(mytuple[3][2])
 
 
-myInfo = {"Name" : "Jhon Lhynher Ferrer", "Age" : 123456789009654321, "Gender" : "Male", "Address" : "Yokohama Japan"}
+myInfo = {"Name" : "Rj Argallon", "Age" : 6969, "Gender" : "Male", "Address" : "Planet Namek"}
 print(myInfo)
 print(myInfo["Age"])
 print(myInfo["Gender"])
@@ -131,13 +131,13 @@ print(myInfo)
 
 myInfo = {
     "Name": {
-        "FirstName": "Jhon Lhynher",
-        "LastName": "Ferrer"
+        "FirstName": "Rj",
+        "LastName": "Argallon"
     },
     "Age": 123456789009654321,
     "Hobbies": [
-        "Magpalambing",
-        "Magpababy",
+        "Kumain",
+        "Matulog",
         "Magmahal"
     ]
 }
@@ -157,13 +157,13 @@ simpleATMMachineDatabase = [
     },
     {
         "Name": {
-            "FirstName": "Jhon Lhynher",
-            "LastName": "Ferrer"
+            "FirstName": "Rjr",
+            "LastName": "Argallon"
         },
-        "AccountNumber": 543210,
-        "PIN": 2512,
+        "AccountNumber": 109346,
+        "PIN": 0001,
         "ControlNumber": 50,
-        "Balance": 99999999999999999999.99
+        "Balance": 6969696969.69
     }
 ]
 print(simpleATMMachineDatabase)
